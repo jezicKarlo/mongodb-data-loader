@@ -1,4 +1,8 @@
 hr/fer/advanced_databases/reader/MusicalInstrumentsReader.class
 hr/fer/advanced_databases/parser/DataParser.class
+hr/fer/advanced_databases/models/MusicalInstrument.class
+hr/fer/advanced_databases/models/Product.class
+hr/fer/advanced_databases/parser/MusicalInstrumentsParser.class
 hr/fer/advanced_databases/reader/DataReader.class
 hr/fer/advanced_databases/loader/DataLoader.class
+hr/fer/advanced_databases/models/Review.class

@@ -1,4 +1,8 @@
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/reader/MusicalInstrumentsReader.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/models/Product.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/models/MusicalInstrument.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/parser/MusicalInstrumentsParser.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/loader/DataLoader.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/parser/DataParser.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/reader/DataReader.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/main/java/hr/fer/advanced_databases/models/Review.java
