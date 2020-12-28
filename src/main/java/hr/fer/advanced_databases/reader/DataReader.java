@@ -13,7 +13,7 @@ public class DataReader implements AutoCloseable {
         reader = new BufferedReader(new FileReader(filePath));
     }
 
-    public String readItem() throws IOException {
+    public String readLine() throws IOException {
         return reader.readLine();
     }
 
