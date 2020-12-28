@@ -22,11 +22,12 @@ public class MusicalInstrumentsParser implements DataParser {
         List<MusicalInstrument> instruments = new ArrayList<>();
         while (line != null) {
             MusicalInstrument instrument = new MusicalInstrument();
-            while (!line.isEmpty()) {
+            while (line != null && !line.isEmpty()) {
                 addFiled(line, instrument);
                 line = reader.readLine();
             }
             instruments.add(instrument);
+            line = reader.readLine();
         }
         return instruments;
     }
