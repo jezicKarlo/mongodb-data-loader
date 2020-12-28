@@ -1,11 +1,10 @@
 package hr.fer.advanced_databases.reader;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.Assert.*;
 
-class MusicalInstrumentsReaderTest {
+public class MusicalInstrumentsReaderTest {
 
     private static final String FILE_PATH = "./src/main/resources/musical_instruments.txt";
 
