@@ -6,7 +6,6 @@ import hr.fer.advanced_databases.reader.MusicalInstrumentsReader;
 import hr.fer.advanced_databases.reader.MusicalInstrumentsReaderTest;
 import org.junit.Test;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -39,9 +38,27 @@ public class MusicalInstrumentsParserTest {
             MusicalInstrumentsParser parser = new MusicalInstrumentsParser(reader);
             List<MusicalInstrument> instruments = parser.parse();
             assertEquals(1, instruments.size());
+            checkValues(instruments.get(0));
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void checkValues(MusicalInstrument instrument) {
+        assertEquals("B0009F5ZXS", instrument.getProduct().getProductId());
+        assertEquals("Dimarzio Virtual Hot PAF Bridge - Black Finish DP223 Vintage Output Humbucker Pickup",
+                instrument.getProduct().getTitle());
+        assertEquals(69.00, instrument.getProduct().getPrice(), 0.0);
+        assertEquals("A3915SRVUGEXY5", instrument.getReview().getUserId());
+        assertEquals("plinker", instrument.getReview().getProfileName());
+        assertEquals("2/2", instrument.getReview().getHelpfulness());
+        assertEquals(3.0, instrument.getReview().getScore(), 0.0);
+        assertEquals("1336780800", instrument.getReview().getTime());
+        assertEquals("Wrong pickup description", instrument.getReview().getSummary());
+        assertEquals("The name and description of this Pickup, Virtual Hot PAF, does not match the " +
+                "model number you list. The model number you have listed is for the 36th Anniversary pickup that " +
+                "replaced the Virtual Hot when it was discontinued. They are not even close to being the same pickup.",
+                instrument.getReview().getText());
     }
 
 }
