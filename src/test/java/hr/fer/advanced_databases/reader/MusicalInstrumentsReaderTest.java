@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class DataReaderTest {
+class MusicalInstrumentsReaderTest {
 
     private static final String FILE_PATH = "./src/main/resources/musical_instruments.txt";
 
     @Test
     public void readLineTest() {
-        try (DataReader reader = new DataReader(FILE_PATH)) {
+        try (MusicalInstrumentsReader reader = new MusicalInstrumentsReader(FILE_PATH)) {
             String line = reader.readLine();
             assertNotNull(line);
             assertNotEquals("", line);
