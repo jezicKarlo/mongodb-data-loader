@@ -1,12 +1,10 @@
 package hr.fer.advanced_databases.parser;
 
-import hr.fer.advanced_databases.reader.DataReader;
+import hr.fer.advanced_databases.models.MusicalInstrument;
 
-public class DataParser {
+import java.util.List;
 
-    private final DataReader reader;
+public interface DataParser {
 
-    public DataParser(DataReader reader) {
-        this.reader = reader;
-    }
+    public List<MusicalInstrument> parse();
 }
