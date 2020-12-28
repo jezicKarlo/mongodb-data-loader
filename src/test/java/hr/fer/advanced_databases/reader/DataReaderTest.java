@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class DataReaderTest {
 
-    private static final String FILE_PATH = "./src/main/resources/video_games.txt";
+    private static final String FILE_PATH = "./src/main/resources/musical_instruments.txt";
 
     @Test
     public void readLineTest() {
