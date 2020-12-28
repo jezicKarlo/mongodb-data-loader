@@ -12,4 +12,8 @@ public class MockReader implements DataReader {
     public String readLine() {
         return line;
     }
+
+    @Override
+    public void close() throws Exception {
+    }
 }

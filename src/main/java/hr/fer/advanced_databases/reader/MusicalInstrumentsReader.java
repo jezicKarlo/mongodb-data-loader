@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class MusicalInstrumentsReader implements AutoCloseable, DataReader {
+public class MusicalInstrumentsReader implements DataReader {
 
     private final BufferedReader reader;
 

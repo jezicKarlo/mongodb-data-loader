@@ -5,9 +5,10 @@ import hr.fer.advanced_databases.models.Product;
 import hr.fer.advanced_databases.models.Review;
 import hr.fer.advanced_databases.reader.DataReader;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class MusicalInstrumentsParser implements DataParser{
+public class MusicalInstrumentsParser implements DataParser {
 
     private final DataReader reader;
 
@@ -17,7 +18,17 @@ public class MusicalInstrumentsParser implements DataParser{
 
     @Override
     public List<MusicalInstrument> parse() {
-        return null;
+        String line = reader.readLine();
+        List<MusicalInstrument> instruments = new ArrayList<>();
+        while (line != null) {
+            MusicalInstrument instrument = new MusicalInstrument();
+            while (!line.isEmpty()) {
+                addFiled(line, instrument);
+                line = reader.readLine();
+            }
+            instruments.add(instrument);
+        }
+        return instruments;
     }
 
     public void addFiled(String field, MusicalInstrument instrument) {
