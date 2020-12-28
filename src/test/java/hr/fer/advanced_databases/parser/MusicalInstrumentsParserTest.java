@@ -26,4 +26,9 @@ public class MusicalInstrumentsParserTest {
         assertEquals(3.0, instrument.getReview().getScore(), 0.0);
     }
 
+    @Test
+    public void parseTest() {
+
+    }
+
 }
