@@ -1,14 +1,13 @@
 package hr.fer.advanced_databases.database;
 
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static com.mongodb.client.model.Filters.eq;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class MongoDatabaseInstanceTest {
 
