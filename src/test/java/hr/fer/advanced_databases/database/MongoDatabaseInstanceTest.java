@@ -26,7 +26,14 @@ public class MongoDatabaseInstanceTest {
     }
 
     @Test
-    @Ignore
+    public void showDatabasesTest_collectionThatDoesntExist() {
+        MongoDatabase database = MongoDatabaseInstance.getDatabase("nmbpdata");
+        MongoCollection<Document> collection = database.getCollection("musicalInstruments");
+
+        assertEquals(0.0, collection.countDocuments(), 0.0);
+    }
+
+    @Test
     public void findTest() {
         MongoDatabase database = MongoDatabaseInstance.getDatabase("nmbpdata");
         MongoCollection<Document> collection = database.getCollection("testcollection");

@@ -52,7 +52,10 @@ public class MusicalInstrumentsParser implements DataParser {
             return;
         }
         if ("price".equals(productField)) {
-            product.setPrice(Double.parseDouble(field.split(" ", 2)[1]));
+            String price = field.split(" ", 2)[1];
+            if (!"unknown".equals(price)) {
+                product.setPrice(Double.parseDouble(price));
+            }
         }
     }
 

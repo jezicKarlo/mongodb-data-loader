@@ -12,7 +12,6 @@ public class MongoDatabaseInstance {
 
     static {
         client = MongoClients.create("mongodb://root:rootnmbp@localhost");
-        client.close();
     }
 
     public MongoDatabase getDatabase(String database) {
