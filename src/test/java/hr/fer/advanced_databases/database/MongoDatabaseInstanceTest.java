@@ -1,0 +1,42 @@
+package hr.fer.advanced_databases.database;
+
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import static com.mongodb.client.model.Filters.eq;
+import static org.junit.Assert.*;
+
+public class MongoDatabaseInstanceTest {
+
+    @Test
+    public void getDatabaseInstanceTest() {
+        MongoDatabase database = MongoDatabaseInstance.getDatabase("nmbpdata");
+        assertNotNull(database);
+    }
+
+    @Test
+    public void showDatabasesTest() {
+        MongoDatabase database = MongoDatabaseInstance.getDatabase("nmbpdata");
+        MongoCollection<Document> collection = database.getCollection("testcollection");
+
+        assertEquals(1.0, collection.countDocuments(), 0.0);
+    }
+
+    @Test
+    @Ignore
+    public void findTest() {
+        MongoDatabase database = MongoDatabaseInstance.getDatabase("nmbpdata");
+        MongoCollection<Document> collection = database.getCollection("testcollection");
+
+        Document document = new Document("data", "test2");
+        collection.insertOne(document);
+        assertEquals(2.0, collection.countDocuments(), 0.0);
+        collection.deleteOne(document);
+        assertEquals(1.0, collection.countDocuments(), 0.0);
+    }
+
+}

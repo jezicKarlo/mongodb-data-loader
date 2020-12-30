@@ -10,23 +10,14 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class MongoDatabaseInstance {
 
-    private final String CONNECTION_STRING =
-            "mongodb+srv://root:rootnmbp@localhost/nmbpdata?w=majority";
-
-    private MongoDatabase database;
+    private MongoClient client;
 
     static {
-        ConnectionString connectionString = new ConnectionString(CONNECTION_STRING);
-        MongoClientSettings settings = MongoClientSettings.builder()
-                .applyConnectionString(connectionString)
-                .retryWrites(true)
-                .build();
-
-        MongoClient mongoClient = MongoClients.create(settings);
-        database = mongoClient.getDatabase("nmbpdata");
+        client = MongoClients.create("mongodb://root:rootnmbp@localhost");
+        client.close();
     }
 
-    public MongoDatabase getDatabase() {
-        return database;
+    public MongoDatabase getDatabase(String database) {
+        return client.getDatabase(database);
     }
 }
