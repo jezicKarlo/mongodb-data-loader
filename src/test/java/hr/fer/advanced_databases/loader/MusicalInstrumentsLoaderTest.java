@@ -8,6 +8,7 @@ import hr.fer.advanced_databases.parser.MusicalInstrumentsParser;
 import hr.fer.advanced_databases.reader.MusicalInstrumentsReader;
 import hr.fer.advanced_databases.reader.MusicalInstrumentsReaderTest;
 import org.bson.Document;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -17,6 +18,7 @@ import static org.junit.Assert.*;
 public class MusicalInstrumentsLoaderTest {
 
     @Test
+    @Ignore("test for loading data")
     public void loadData() throws FileNotFoundException {
         MusicalInstrumentsConverter converter = new MusicalInstrumentsConverter();
         MusicalInstrumentsReader reader = new MusicalInstrumentsReader(MusicalInstrumentsReaderTest.FILE_PATH);
