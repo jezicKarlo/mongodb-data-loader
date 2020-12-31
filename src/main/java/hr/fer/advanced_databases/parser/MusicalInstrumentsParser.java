@@ -4,7 +4,9 @@ import hr.fer.advanced_databases.models.MusicalInstrument;
 import hr.fer.advanced_databases.models.Product;
 import hr.fer.advanced_databases.models.Review;
 import hr.fer.advanced_databases.reader.DataReader;
+import hr.fer.advanced_databases.util.EpochConverter;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,7 +80,9 @@ public class MusicalInstrumentsParser implements DataParser {
             return;
         }
         if ("time".equals(reviewField)) {
-            review.setTime(field.split(" ", 2)[1]);
+            String epochTime = field.split(" ", 2)[1];
+            String time = EpochConverter.convertFromEpoch(epochTime);
+            review.setTime(time);
             return;
         }
         if ("summary".equals(reviewField)) {
@@ -89,4 +93,6 @@ public class MusicalInstrumentsParser implements DataParser {
             review.setText(field.split(" ", 2)[1]);
         }
     }
+
+
 }

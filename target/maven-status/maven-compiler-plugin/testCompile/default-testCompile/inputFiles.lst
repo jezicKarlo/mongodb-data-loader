@@ -1,3 +1,7 @@
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/converter/MusicalInstrumentsConverterTest.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/reader/MusicalInstrumentsReaderTest.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/parser/MusicalInstrumentsParserTest.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/loader/MusicalInstrumentsLoaderTest.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/util/EpochConverterTest.java
 /home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/reader/MockReader.java
+/home/kjezic/Desktop/Faks/Diplomski/Semestar 1/BAZE/mongodb-data-loader/src/test/java/hr/fer/advanced_databases/database/MongoDatabaseInstanceTest.java

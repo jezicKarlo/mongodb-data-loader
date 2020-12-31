@@ -1,3 +1,7 @@
-hr/fer/advanced_databases/parser/MusicalInstrumentsParserTest.class
+hr/fer/advanced_databases/loader/MusicalInstrumentsLoaderTest.class
+hr/fer/advanced_databases/converter/MusicalInstrumentsConverterTest.class
+hr/fer/advanced_databases/database/MongoDatabaseInstanceTest.class
 hr/fer/advanced_databases/reader/MusicalInstrumentsReaderTest.class
+hr/fer/advanced_databases/util/EpochConverterTest.class
+hr/fer/advanced_databases/parser/MusicalInstrumentsParserTest.class
 hr/fer/advanced_databases/reader/MockReader.class

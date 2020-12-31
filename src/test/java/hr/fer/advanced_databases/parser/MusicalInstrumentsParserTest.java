@@ -53,7 +53,7 @@ public class MusicalInstrumentsParserTest {
         assertEquals("plinker", instrument.getReview().getProfileName());
         assertEquals("2/2", instrument.getReview().getHelpfulness());
         assertEquals(3.0, instrument.getReview().getScore(), 0.0);
-        assertEquals("1336780800", instrument.getReview().getTime());
+        assertEquals("12/05/2012 02:00:00", instrument.getReview().getTime());
         assertEquals("Wrong pickup description", instrument.getReview().getSummary());
         assertEquals("The name and description of this Pickup, Virtual Hot PAF, does not match the " +
                 "model number you list. The model number you have listed is for the 36th Anniversary pickup that " +
