@@ -9,7 +9,7 @@ import java.util.Date;
 public class EpochConverter {
 
     public String convertFromEpoch(String epochTime) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy kk:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'kk:mm:ss");
         return sdf.format(new Date(Long.parseLong(epochTime) * 1000));
     }
 }

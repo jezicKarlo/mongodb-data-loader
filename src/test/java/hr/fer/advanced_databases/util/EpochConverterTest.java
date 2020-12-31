@@ -9,7 +9,7 @@ public class EpochConverterTest {
     @Test
     public void convertTest() {
         String time = EpochConverter.convertFromEpoch("1336780800");
-        assertEquals("12/05/2012 02:00:00", time);
+        assertEquals("2012-05-12T02:00:00", time);
     }
 
 }
