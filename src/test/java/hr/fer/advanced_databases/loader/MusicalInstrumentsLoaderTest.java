@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 public class MusicalInstrumentsLoaderTest {
 
     @Test
-    @Ignore("test for loading data")
+    @Ignore("run when you want to load data")
     public void loadData() throws FileNotFoundException {
         MusicalInstrumentsConverter converter = new MusicalInstrumentsConverter();
         MusicalInstrumentsReader reader = new MusicalInstrumentsReader(MusicalInstrumentsReaderTest.FILE_PATH);
